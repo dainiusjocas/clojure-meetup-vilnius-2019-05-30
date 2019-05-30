@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  text2dateLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      Tracing: "Active"
+      MemorySize: 3008
+      Handler: not.used
+      Runtime: provided
+      CodeUri: function.zip
+      Policies:
+        - AWSLambdaExecute
+
+  text2dateLambdaLogs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${ text2dateLambda }
+      RetentionInDays: 1

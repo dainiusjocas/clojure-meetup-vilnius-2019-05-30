@@ -1,4 +1,8 @@
-# text2date-lambda
+# clojure-meetup-vilnius-2019-05-30
+
+Demo project convert text to date.
+
+## text2date-lambda
 
 Custom AWS Lambda runtime with the Clojure `tools-deps` application compiled with GraalVM `native-image`.
 

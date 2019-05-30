@@ -2,6 +2,8 @@
 
 Demo project convert text to date.
 
+Slides of the presentation can be found here: https://www.slideshare.net/Dainius/clojure-workflow-tokenmill-by-dainius-jocas
+
 ## text2date-lambda
 
 Custom AWS Lambda runtime with the Clojure `tools-deps` application compiled with GraalVM `native-image`.

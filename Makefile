@@ -27,7 +27,7 @@ deploy-custom-runtime-lambda: build-lambda-zip
 	rm function.zip
 
 deploy-lambda-via-container:
-	docker build --target deployer \
+	@docker build --target deployer \
 	--build-arg AWS_DEFAULT_REGION=${MY_AWS_DEFAULT_REGION} \
 	--build-arg AWS_ACCESS_KEY_ID=${MY_AWS_ACCESS_KEY_ID} \
 	--build-arg AWS_SECRET_ACCESS_KEY=${MY_AWS_SECRET_ACCESS_KEY} \
